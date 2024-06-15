@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    int i,j,k=0;
+    char a[100];
+    printf("enter the string");
+    gets(a);
+    for(i=0;a[i]!='\0';i++);
+    for(j=0;j<i/2;j++)
+    {
+        if(a[j]!=a[i-j-1])
+        {
+            k=1;
+                break;
+                        
+        }
+    }    
+        if(k==0)
+        {
+            printf("it is palliandrome");
+        }
+        else
+        {
+            printf("it is not a palliandrome");
+        }
+    
+    
+    
+    return 0;
+}
